@@ -1,5 +1,5 @@
 const gulp = require('gulp');
-const sass = require('gulp-sass')(require('sass'))
+const sass = require('gulp-sass')(require('sass'));
 
 //versão @7.1.0 do image min  (gulp.imagemin@7.1.0)
 const imagemin = require ('gulp-imagemin');       

@@ -1,0 +1,37 @@
+.video {
+    &__container {
+        padding: 2vw 5.06vw;
+        min-height: 50vw;
+
+        &__style {
+            margin-top: 24px;
+            margin-left: 50px;
+            border-radius: 5%;
+            filter: drop-shadow(10px 7px 20px orange);
+
+            @media screen and (max-width: 768px){
+                width: 680px;
+                height: 500px;
+                padding-left: 50px;
+            }
+
+            @media screen and (min-width: 768px) and (max-width:1023px){
+                width: 680px;
+                height: 500px;
+
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &__container {
+            padding: 2vw;
+            min-height: auto;
+
+            &__style {
+                margin-top: 12px;
+                margin-left: 0;
+            }
+        }
+    }
+}

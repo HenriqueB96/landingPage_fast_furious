@@ -1,0 +1,65 @@
+@use 'variaveis';
+
+.cast {
+    padding: 2vw;
+    min-height: 20vw;
+    
+    &__title{
+        text-align: center;
+        font-size: 100px;
+    }
+
+    &__list {
+        padding: 24px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        align-items: center;
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+
+        @media screen and (min-width: 768px) and (max-width:1023px){
+        grid-template-columns: 1fr 1fr;
+        }
+        
+        
+        &__item {
+            text-align: center;
+            filter:drop-shadow(10px 7px 20px orange);
+            box-shadow: rgba(240, 156, 46, 0.4) 0px 5px;
+            
+
+            img {    
+                height: 20vh;
+                width: 20vw;    
+                max-width: 100%;
+                margin-bottom: 8px;
+                border-radius: 10%;
+
+                @media screen and (max-width: 768px){
+                    width: 360px;
+                    height: 200px;
+                }
+                @media screen and (min-width: 768px) and (max-width:1023px){
+                    
+                }
+            }
+            
+            h1{
+                margin-bottom: 8px;
+                box-shadow: rgba(240, 156, 46, 0.4) 0px 5px;
+
+                @media screen and (max-width: 768px){
+                    box-shadow: none;
+                }
+
+                @media screen and (min-width: 768px) and (max-width:1023px){
+                    box-shadow: none;
+                }
+            }
+        
+        }
+    }
+}
